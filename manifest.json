@@ -1,0 +1,35 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Torugo: Download Facebook 360° Photos/Videos",
+  "short_name": "Azimuth 360°",
+  "description": "Automatically downloads, stitches, and adds META tags to Facebook 360 Photos and Videos",
+  "version": "0.9.35",
+  "permissions": [
+    "activeTab", "tabs"
+  ],
+  "content_scripts": [
+    {
+	"matches": ["https://*.facebook.com/*photo*"],
+	"js": ["image_processor.js"],
+	 "css": ["msgcss.css"]
+    }, 
+    {
+	"matches": ["http://*/*", "https://*/*"],
+	"js": ["image_finder.js"]
+    }
+  ],
+  "icons": { "16": "icons/main_16.png",
+     "48": "icons/main_48.png",
+    "128": "icons/main_128.png"
+  },
+  "browser_action": {
+	"default_icon": {  
+	  "19": "icons/icon_19.png",    
+	  "38": "icons/icon_38.png"
+	},
+	"default_title": "Download 360",
+	"default_popup": "popup.html"
+   },
+  "manifest_version": 2
+}

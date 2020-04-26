@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Torugo: Baixar fotos 360° do Facebook</title>
+	<meta name="author" content="Torugo">
+	<style>  
+	.torugo-button {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  overflow: hidden;
+	  margin: 10px;
+	  padding: 8px 8px;
+	  cursor: pointer;
+	  -webkit-user-select: none;
+		-moz-user-select: none;
+		 -ms-user-select: none;
+			user-select: none;
+	  -webkit-transition: all 60ms ease-in-out;
+	  transition: all 60ms ease-in-out;
+	  text-align: center;
+	  white-space: nowrap;
+	  text-decoration: none !important;
+	  text-transform: none;
+	  text-transform: capitalize;
+	  color: #fff;
+	  border: 0 none;
+	  border-radius: 4px;
+	  font-size: 12px;
+	  font-weight: 500;
+	  line-height: 1;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  appearance: none;
+	  -webkit-box-pack: center;
+	  -webkit-justify-content: center;
+		 -ms-flex-pack: center;
+			justify-content: center;
+	  -webkit-box-align: center;
+	  -webkit-align-items: center;
+		 -ms-flex-align: center;
+			align-items: center;
+	  -webkit-box-flex: 0;
+	  -webkit-flex: 0 0 160px;
+		 -ms-flex: 0 0 160px;
+			flex: 0 0 160px;
+	}
+	.torugo-button:hover {
+	  -webkit-transition: all 60ms ease;
+	  transition: all 60ms ease;
+	  opacity: .85;
+	}
+	.torugo-button:active {
+	  -webkit-transition: all 60ms ease;
+	  transition: all 60ms ease;
+	  -webkit-transform: scale(0.97);
+			transform: scale(0.97);
+	  opacity: .75;
+	}
+
+	.torugo-button.-green {
+	  color: #FFFFFF;
+	  background: #3ac569;
+	}
+	.torugo-button.-red {
+	  color: #FFFFFF;
+	  background: #930036;
+	}
+	.torugo-button.-blue {
+		margin-top: 50px;
+	  color: #FFFFFF;
+	  background: lightskyblue;
+	}
+	body { text-align: center; }
+	h4 {  display: inline-block;  }
+	
+	.animated {
+	  -webkit-transition: opacity 600ms ease;
+	  transition: opacity 600ms ease;
+	  opacity: 0;
+	}
+	.shown
+	{
+		opacity: 1;
+	}
+	.hidden
+	{
+		opacity: 0;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="view" style='display:none'>
+<h3>Torugo: Baixar fotos 360 do Facebook</h3>
+<h4>Selecione o tipo da foto</h4>
+<div class='torugo-button -green' id="equi">Baixar equirectangular</div>
+<div class='torugo-button -red' id='cube'>Baixar cubemap</div>
+<h4 id='messenger' class='animated'>&nbsp;</h4>
+</div>
+<div id="no-view" style="width: 200px">
+<h3>Detectando imagens 360...</h3>
+</div>
+<div><a class='torugo-button -blue' a href='https://github.com/victorhugoalmeid' target='_black'>Baixar Videos (beta)</a></div>
+
+<div><br /><small>Atualize a página antes de fazer o download</small></div>
+
+<div><br /><small><a id="signature" href='https://www.youtube.com/c/torugoo' target='_black'>YouTube (@Torugo) Inscreva-se</a></small></div>
+</body>
+<script src='popup.js'></script>
+
+</html>
